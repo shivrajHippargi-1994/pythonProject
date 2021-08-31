@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.7.1 on win32)" generated="20210831 17:25:52.632" rpa="false" schemaversion="2">
+<suite id="s1" name="TC1" source="C:\Users\user\PycharmProjects\pythonProject\TestCases\TC1.robot">
+<test id="s1-t1" name="LoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210831 17:26:04.628" level="INFO">Opening browser 'Chrome' to base url 'http://hospital-management.webrelier.com/site/login'.</msg>
+<status status="PASS" starttime="20210831 17:26:04.597" endtime="20210831 17:28:14.477"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>demo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210831 17:28:14.482" level="INFO">Typing text 'demo@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210831 17:28:14.480" endtime="20210831 17:28:21.201"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>admin@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210831 17:28:21.201" level="INFO">Typing text 'admin@123' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20210831 17:28:21.201" endtime="20210831 17:28:23.110"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210831 17:28:23.113" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20210831 17:28:23.112" endtime="20210831 17:29:10.193"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[@class='dropdown-toggle']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210831 17:29:10.199" level="INFO">Clicking element 'xpath=//a[@class='dropdown-toggle']'.</msg>
+<status status="PASS" starttime="20210831 17:29:10.197" endtime="20210831 17:29:11.362"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210831 17:29:11.374" endtime="20210831 17:29:24.679"/>
+</kw>
+<status status="PASS" starttime="20210831 17:26:04.597" endtime="20210831 17:29:24.679"/>
+</test>
+<status status="PASS" starttime="20210831 17:25:52.663" endtime="20210831 17:29:24.741"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
